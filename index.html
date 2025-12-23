@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0f19" />
+    <title>VibesGlow — AI ile Instagram Profil Analizi</title>
+    <meta name="description"
+        content="VibesGlow: Instagram profilini ekran görüntülerinden analiz eden AI. Skor, ilk izlenim, estetik, grid optimizasyonu ve takip kararı analizi." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="VibesGlow — AI ile Instagram Profil Analizi" />
+    <meta property="og:description"
+        content="Skor, ilk izlenim, estetik analiz, grid optimizasyonu ve takip kararı analizi." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <a class="brand" href="#top" aria-label="VibesGlow Ana Sayfa">
+                    <img src="images/vibesglow-logo.jpeg" alt="VibesGlow logosu" class="logo" aria-hidden="true" />
+                    <span>VibesGlow</span>
+                </a>
+
+                <nav aria-label="Site menüsü">
+                    <ul>
+                        <li><a href="#features">Özellikler</a></li>
+                        <li><a href="#learn">Neler Öğreneceksin?</a></li>
+                        <li><a href="#premium">Premium</a></li>
+                        <li><a href="#shots">Görseller</a></li>
+                        <li><a href="#pricing">Paketler</a></li>
+                        <li><a href="#support">Destek</a></li>
+                    </ul>
+                </nav>
+
+                <div class="navActions">
+                    <button class="btn ghost burger" id="burgerBtn" aria-label="Menüyü aç/kapat">
+                        <span aria-hidden="true">☰</span> Menü
+                    </button>
+                    <!-- <a class="btn primary" href="#download">İndir</a> -->
+                </div>
+            </div>
+
+            <div class="mobileMenu" id="mobileMenu" style="display:none">
+                <a href="#features">Özellikler</a>
+                <a href="#learn">Neler Öğreneceksin?</a>
+                <a href="#premium">Premium</a>
+                <a href="#shots">Görseller</a>
+                <a href="#pricing">Paketler</a>
+                <a href="#support">Destek</a>
+                <!-- <a href="#download">İndir</a> -->
+            </div>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="heroGrid">
+                    <div>
+                        <span class="pill"><span class="dot"></span> Tahmin değil, profiline özel AI içgörü</span>
+                        <h1 class="h1">
+                            Instagram’da öne çık, ilk izlenimini güçlendir, profilini bilinçli şekilde geliştir.
+                        </h1>
+                        <p class="lead">
+                            VibesGlow; ekran görüntülerinden profilini analiz eder: AI destekli skor, 3 saniyelik ilk
+                            izlenim algısı,
+                            estetik detaylar, emoji kişilik haritası, grid optimizasyonu ve takip kararı analizi.
+                        </p>
+
+                        <div class="heroActions" id="download">
+                            <!-- URL'leri aşağıdaki script kısmında güncelle -->
+                            <a class="btn primary" id="iosBtn" href="#" target="_blank" rel="noopener">iOS’ta İndir</a>
+                            <a class="btn primary" id="androidBtn" href="#" target="_blank" rel="noopener">Android’de
+                                İndir</a>
+                        </div>
+
+                        <div class="miniNote">
+                            <i>!</i>
+                            <div>
+                                <b>Not:</b> Analiz sonuçları bilgilendirme amaçlıdır. Uygulama “kesin doğruluk”
+                                iddiasında bulunmaz;
+                                öneriler profiline özel içgörü sunar.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="heroCard" aria-label="Özet kart">
+                        <div class="heroCardTop">
+                            <div class="miniDots" aria-hidden="true"><i></i><i></i><i></i></div>
+                            <span class="muted2" style="font-size:12.5px; font-weight:900">VibesGlow</span>
+                        </div>
+                        <div>
+                            <img class="vibeglow-bg" src="images/vibeglow-bg.jpeg" alt="vibeglow-bg" />
+                        </div>
+                        <div class="heroCardBody">
+                            <div class="statsGrid">
+                                <div class="stat">
+                                    <div class="t">AI Skor</div>
+                                    <div class="v">0–100</div>
+                                    <div class="d">Profil algını tek puanda topla.</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="t">İlk İzlenim</div>
+                                    <div class="v">3 sn</div>
+                                    <div class="d">Hızlı algı değerlendirmesi.</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="t">Grid Opt.</div>
+                                    <div class="v">9–12</div>
+                                    <div class="d">Öne çıkar / sabit tut / kaldır.</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="t">Takip Kararı</div>
+                                    <div class="v">Analiz</div>
+                                    <div class="d">Takip edilme olasılığı.</div>
+                                </div>
+                            </div>
+                            <div class="gradLine" aria-hidden="true">
+                                <div></div>
+                            </div>
+                            <div class="muted" style="margin-top:10px; font-size:13px; line-height:1.6">
+                                Ekran görüntüsü yükle, raporu al, aksiyonları uygula. Satın alma işlemleri yalnızca
+                                mobil uygulama içinde yapılır.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREENSHOTS -->
+        <section id="shots">
+            <div class="container">
+
+                <div class="shotsWrap">
+                    <div class="slider">
+                        <div class="sliderTop">
+                            <span class="counter" id="shotCounter">1 / 8</span>
+                        </div>
+
+                        <div class="frame" aria-label="Ekran görüntüsü alanı">
+                            <img id="shotImg" src="" alt="VibesGlow ekran görüntüsü" style="display:none" />
+                            <div class="placeholder" id="shotPlaceholder">
+                                Görselleri ekleyince burada görünecek.<br /><br />
+                                Dosya isimlerini <span style="opacity:.9">script</span> içinde güncelle.
+                            </div>
+                        </div>
+
+                        <div class="sliderControls">
+                            <button class="btn small" id="prevShot" type="button">← Önceki</button>
+                            <div class="dots" id="dots"></div>
+                            <button class="btn small" id="nextShot" type="button">Sonraki →</button>
+                        </div>
+
+                        <div class="thumbs" id="thumbs"></div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Özellikler</h2>
+                        <p>Profilini “genel tavsiye” ile değil, <b>net ve ölçülebilir</b> değerlendirmelerle geliştir.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panelTop">
+                        <div class="cap"><span class="ic" aria-hidden="true">✨</span> Tüm Özellikler</div>
+                        <span class="chip">Tam Kapsam</span>
+                    </div>
+                    <ul class="list">
+                        <li><i>✓</i>
+                            <div><b>AI destekli profil skoru</b>
+                                <div class="sub">Profil algını tek puanda özetler.</div>
+                            </div>
+                        </li>
+                        <li><i>✓</i>
+                            <div><b>İlk izlenim analizi</b>
+                                <div class="sub">3 saniyelik algı değerlendirmesi.</div>
+                            </div>
+                        </li>
+                        <li><i>✓</i>
+                            <div><b>Detaylı estetik analiz</b>
+                                <div class="sub">Ton, uyum, kompozisyon ve genel kalite.</div>
+                            </div>
+                        </li>
+                        <li><i>✓</i>
+                            <div><b>Emoji kişilik haritası</b>
+                                <div class="sub">Profil vibe dağılımı ve karakter okuması.</div>
+                            </div>
+                        </li>
+                        <li><i>✓</i>
+                            <div><b>Güçlü ve zayıf yönlerin net tespiti</b>
+                                <div class="sub">Neyi koru, neyi düzelt belirginleşir.</div>
+                            </div>
+                        </li>
+                        <li><i>✓</i>
+                            <div><b>Fotoğraf bazlı iyileştirme önerileri</b>
+                                <div class="sub">Kare bazında yorum ve geliştirme yönü.</div>
+                            </div>
+                        </li>
+                        <li><i>✓</i>
+                            <div><b>Grid optimizasyonu</b>
+                                <div class="sub">Öne çıkar / sabit tut / kaldır kararları.</div>
+                            </div>
+                        </li>
+                        <li><i>✓</i>
+                            <div><b>Takip kararı analizi</b>
+                                <div class="sub">Takip edilme olasılığına göre değerlendirme.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEARN -->
+        <section id="learn">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Neler Öğreneceksin?</h2>
+                        <p>Analiz sonrası “ne yapmalıyım?” sorusu yerine, <b>neyi neden</b> değiştirmen gerektiğini
+                            bilirsin.</p>
+                    </div>
+                </div>
+
+                <div class="twoCol">
+                    <div class="panel">
+                        <div class="panelTop">
+                            <div class="cap"><span class="ic" aria-hidden="true">👀</span> Algı & İlk İzlenim</div>
+                            <span class="chip">İlk 3 saniye</span>
+                        </div>
+                        <ul class="list">
+                            <li><i>✓</i>
+                                <div><b>İnsanlar seni ilk baktığında nasıl algılıyor?</b></div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Profilinin ilk izlenim skoru</b></div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Profilinin hangi hedef kitleye daha çok hitap ettiği</b></div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Takip edilme ihtimalini artıran ve düşüren faktörler</b></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panelTop">
+                            <div class="cap"><span class="ic" aria-hidden="true">🧩</span> İçerik & Grid</div>
+                            <span class="chip">Net aksiyon</span>
+                        </div>
+                        <ul class="list">
+                            <li><i>✓</i>
+                                <div><b>Hangi fotoğraflar daha etkili, hangileri zayıf</b></div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Grid’inde öne çıkarılması gereken kareler</b></div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Silinmesi önerilen fotoğraflar ve nedenleri</b></div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Profilin için daha tutarlı bir anlatı oluşturma</b></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREMIUM -->
+        <section id="premium">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Premium Özellikler</h2>
+                        <p>Daha derin raporlar ve daha net aksiyonlar ile profil algını güçlendir.</p>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <div class="highlightInner">
+                        <div class="hlTop">
+                            <div>
+                                <h3>Premium ile neler değişir?</h3>
+                                <p>
+                                    Premium analiz; daha detaylı yorum, çoklu bakış açısı ve kare bazlı gerekçelerle
+                                    daha hızlı ilerlemeni sağlar.
+                                </p>
+                            </div>
+                            <span class="chip">Daha Derin Analiz</span>
+                        </div>
+
+                        <div class="hlGrid">
+                            <div class="hlItem"><span class="bicon" aria-hidden="true">🔎</span>
+                                <div><b>Daha detaylı analiz</b><br />İçgörü seviyesi artar.</div>
+                            </div>
+                            <div class="hlItem"><span class="bicon" aria-hidden="true">🧠</span>
+                                <div><b>3 farklı bakış açısı</b><br />Derinlemesine yorumlar.</div>
+                            </div>
+                            <div class="hlItem"><span class="bicon" aria-hidden="true">🖼️</span>
+                                <div><b>Fotoğraf açıklamaları</b><br />Kare kare değerlendirme.</div>
+                            </div>
+                            <div class="hlItem"><span class="bicon" aria-hidden="true">🧾</span>
+                                <div><b>Detaylı silme gerekçeleri</b><br />Nedenleri açıkça gör.</div>
+                            </div>
+                            <div class="hlItem"><span class="bicon" aria-hidden="true">✅</span>
+                                <div><b>Uygulanabilir aksiyonlar</b><br />Net yapılacaklar listesi.</div>
+                            </div>
+                            <div class="hlItem"><span class="bicon" aria-hidden="true">✨</span>
+                                <div><b>Daha güçlü profil algısı</b><br />Daha tutarlı görünüm.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY -->
+        <section id="why">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Neden Bu Analiz?</h2>
+                        <p>İnsanlar profiline “hissettiği” şekilde tepki verir. VibesGlow, bu algıyı somutlaştırır.</p>
+                    </div>
+                </div>
+
+                <div class="twoCol">
+                    <div class="panel">
+                        <div class="panelTop">
+                            <div class="cap"><span class="ic" aria-hidden="true">📊</span> Veriye dayalı içgörü</div>
+                            <span class="chip">Tahmin değil</span>
+                        </div>
+                        <ul class="list">
+                            <li><i>✓</i>
+                                <div><b>Tahmin yerine, verilere dayalı içgörü</b>
+                                    <div class="sub">Ölçüm + yorum + öneri.</div>
+                                </div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Genel tavsiye değil, profiline özel yorum</b>
+                                    <div class="sub">Kendin için net gör.</div>
+                                </div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>“İyi” demek yerine, net değerlendirme</b>
+                                    <div class="sub">Ne eksik, neden eksik, ne yapılmalı.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panelTop">
+                            <div class="cap"><span class="ic" aria-hidden="true">🚀</span> Sonuç odaklı</div>
+                            <span class="chip">Bilinçli gelişim</span>
+                        </div>
+                        <ul class="list">
+                            <li><i>✓</i>
+                                <div><b>İlk izlenimini güçlendir</b>
+                                    <div class="sub">3 saniye etkisini optimize et.</div>
+                                </div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Profilini bilinçli şekilde geliştir</b>
+                                    <div class="sub">Hızlı deneme-yanılma yerine net plan.</div>
+                                </div>
+                            </li>
+                            <li><i>✓</i>
+                                <div><b>Instagram’da öne çık</b>
+                                    <div class="sub">Tutarlılık ve kalite algısı artar.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- PRICING (INFO) -->
+        <section id="pricing">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Paketler</h2>
+                        <p>Satın alma uygulama içinden yapılır. Buradaki bilgiler tanıtım amaçlıdır.</p>
+                    </div>
+                </div>
+
+                <div class="pricingGrid">
+                    <div class="priceCard">
+                        <h3>Tek Analiz</h3>
+                        <div class="price">29.99 TL</div>
+                        <ul class="pList">
+                            <li><i>✓</i><span>1 profil analizi</span></li>
+                            <li><i>✓</i><span>Tüm özellikler açık</span></li>
+                            <li><i>✓</i><span>Süresiz geçerli</span></li>
+                            <li><i>✓</i><span>Deneme amaçlı ideal</span></li>
+                        </ul>
+                        <div class="priceFoot">Fiyatlar mağaza/bölgeye göre değişebilir.</div>
+                    </div>
+
+                    <div class="priceCard">
+                        <h3>Mini Paket</h3>
+                        <div class="price">79.99 TL</div>
+                        <ul class="pList">
+                            <li><i>✓</i><span>5 analiz hakkı</span></li>
+                            <li><i>✓</i><span>Süresiz geçerli</span></li>
+                        </ul>
+                        <div class="priceFoot">Düzenli gelişim için uygun.</div>
+                    </div>
+
+                    <div class="priceCard popular">
+                        <div class="tag">EN POPÜLER</div>
+                        <h3>Pro Paket</h3>
+                        <div class="price">199.99 TL</div>
+                        <ul class="pList">
+                            <li><i>✓</i><span>15 analiz hakkı</span></li>
+                            <li><i>✓</i><span>Süresiz geçerli</span></li>
+                            <li><i>✓</i><span>En iyi fiyat/performans</span></li>
+                        </ul>
+                        <div class="priceFoot">En çok tercih edilen paket.</div>
+                    </div>
+
+                    <div class="priceCard">
+                        <h3>Mega Paket</h3>
+                        <div class="price">599.99 TL</div>
+                        <ul class="pList">
+                            <li><i>✓</i><span>60 analiz hakkı</span></li>
+                            <li><i>✓</i><span>Süresiz geçerli</span></li>
+                            <li><i>✓</i><span>Profesyonel kullanım için ideal</span></li>
+                        </ul>
+                        <div class="priceFoot">Yoğun kullanım / ekip için.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT -->
+        <section id="support">
+            <div class="container">
+                <div class="sectionHead">
+                    <div>
+                        <h2>Destek</h2>
+                        <p>Teknik sorunlar, öneriler veya hesap silme talepleri için e-posta ile ulaşabilirsin.</p>
+                    </div>
+                </div>
+
+                <div class="supportGrid">
+                    <div class="supportCard">
+                        <h3>İletişim</h3>
+                        <p>En hızlı kanal e-posta. Mesajını doğrudan gönderebilirsin.</p>
+
+                        <div class="contact">
+                            <a
+                                href="mailto:infovibesglow@gmail.com?subject=VibesGlow%20Destek&body=Merhaba%2C%0A%0AUygulama%20ile%20ilgili%20konu%3A%0A%0A-%20Platform%20(iOS%2FAndroid)%3A%0A-%20Sorun%20a%C3%A7%C4%B1klamas%C4%B1%3A%0A-%20Varsa%20ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%3A%0A%0ATe%C5%9Fekk%C3%BCrler">
+                                <span class="cIc" aria-hidden="true">✉️</span>
+                                <span>infovibesglow@gmail.com</span>
+                            </a>
+                        </div>
+
+                        <div class="smallPrint">
+                            Satın alma/ödeme konularında ilgili mağaza sipariş bilgisi (varsa) süreci hızlandırır.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footGrid">
+                <div>
+                    <div class="brand" style="gap:10px">
+                        <img src="images/vibesglow-logo.jpeg" alt="VibesGlow logosu" class="logo" aria-hidden="true" />
+                        <span>VibesGlow</span>
+                    </div>
+                    <div class="copy">
+                        VibesGlow, ekran görüntülerine dayanarak AI destekli analiz ve öneriler sunar. Instagram ile
+                        bağlantılı, ilişkili veya resmi bir ürün değildir.
+                        <br />
+                        <span class="muted2">© <span id="year"></span> VibesGlow. Tüm hakları saklıdır.</span>
+                    </div>
+                </div>
+
+                <div class="footLinks" aria-label="Yasal metin bağlantıları">
+                    <button class="linkBtn" data-open="privacy">Gizlilik</button>
+                    <button class="linkBtn" data-open="kvkk">KVKK</button>
+                    <button class="linkBtn" data-open="terms">Şartlar</button>
+                    <button class="linkBtn" data-open="deletion">Hesap Silme</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modalBack" id="modalBack" role="dialog" aria-modal="true" aria-label="Yasal metin modalı">
+        <div class="modal" role="document">
+            <div class="modalHead">
+                <b id="modalTitle">Metin</b>
+                <button class="closeBtn" id="modalClose" aria-label="Kapat">✕</button>
+            </div>
+            <div class="modalBody" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        // ========= 1) STORE URL'LERİ (BURAYI GÜNCELLE) =========
+        // App Store linkin hazır olunca IOS_URL'i doldur.
+        // Play Store linkin hazır olunca ANDROID_URL'i doldur.
+        const IOS_URL = "https://example.com/appstore-linkini-buraya-yapistir";
+        const ANDROID_URL = "https://example.com/playstore-linkini-buraya-yapistir";
+
+        const SCREENSHOTS = [
+            "images/1.jpg",
+            "images/2.jpg",
+            "images/3.jpg",
+            "images/4.jpg",
+            "images/5.jpg",
+            "images/6.jpg",
+            "images/7.jpg",
+            "images/8.jpg",
+        ];
+
+        // ========= 3) Mobile menu =========
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (burgerBtn) {
+            burgerBtn.addEventListener('click', () => {
+                const open = mobileMenu.style.display !== 'none';
+                mobileMenu.style.display = open ? 'none' : 'block';
+            });
+        }
+        mobileMenu?.querySelectorAll('a')?.forEach(a => {
+            a.addEventListener('click', () => mobileMenu.style.display = 'none');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', (e) => {
+                const id = a.getAttribute('href');
+                if (!id || id === '#') return;
+                const el = document.querySelector(id);
+                if (!el) return;
+                e.preventDefault();
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.replaceState(null, '', id);
+            });
+        });
+
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ========= 4) Download buttons =========
+        function bindLink(id, url) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            if (!url || url.includes("example.com")) {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert("Mağaza linki henüz eklenmedi. IOS_URL / ANDROID_URL alanını güncelle.");
+                });
+                el.style.opacity = ".85";
+            } else {
+                el.href = url;
+            }
+        }
+        bindLink("iosBtn", IOS_URL);
+        bindLink("androidBtn", ANDROID_URL);
+        bindLink("iosBtn2", IOS_URL);
+        bindLink("androidBtn2", ANDROID_URL);
+
+        // ========= 5) Screenshots slider =========
+        const shotImg = document.getElementById("shotImg");
+        const shotPlaceholder = document.getElementById("shotPlaceholder");
+        const shotCounter = document.getElementById("shotCounter");
+        const prevShot = document.getElementById("prevShot");
+        const nextShot = document.getElementById("nextShot");
+        const dots = document.getElementById("dots");
+        const thumbs = document.getElementById("thumbs");
+
+        let idx = 0;
+
+        function setShot(i) {
+            idx = (i + SCREENSHOTS.length) % SCREENSHOTS.length;
+            shotCounter.textContent = (idx + 1) + " / " + SCREENSHOTS.length;
+
+            const src = SCREENSHOTS[idx];
+            // placeholder logic: if src looks default and missing, show placeholder until load
+            shotPlaceholder.style.display = "grid";
+            shotImg.style.display = "none";
+            shotImg.style.opacity = "0";
+
+            shotImg.onload = () => {
+                shotPlaceholder.style.display = "none";
+                shotImg.style.display = "block";
+                requestAnimationFrame(() => shotImg.style.opacity = "1");
+            };
+            shotImg.onerror = () => {
+                // keep placeholder
+                shotPlaceholder.style.display = "grid";
+                shotImg.style.display = "none";
+            };
+            shotImg.src = src;
+
+            // dots active
+            dots.querySelectorAll("button").forEach((b, di) => b.classList.toggle("active", di === idx));
+            thumbs.querySelectorAll(".thumb").forEach((t, ti) => t.classList.toggle("active", ti === idx));
+        }
+
+        // build dots + thumbs
+        SCREENSHOTS.forEach((src, i) => {
+            const d = document.createElement("button");
+            d.type = "button";
+            d.setAttribute("aria-label", "Görsel " + (i + 1));
+            d.addEventListener("click", () => setShot(i));
+            dots.appendChild(d);
+
+            const t = document.createElement("div");
+            t.className = "thumb";
+            t.setAttribute("role", "button");
+            t.setAttribute("tabindex", "0");
+            t.setAttribute("aria-label", "Küçük görsel " + (i + 1));
+
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = "VibesGlow küçük görsel " + (i + 1);
+            img.onerror = () => {
+                t.innerHTML = '<div class="ph">' + (i + 1) + '</div>';
+            };
+
+            t.appendChild(img);
+            t.addEventListener("click", () => setShot(i));
+            t.addEventListener("keydown", (e) => {
+                if (e.key === "Enter" || e.key === " ") setShot(i);
+            });
+            thumbs.appendChild(t);
+        });
+
+        prevShot.addEventListener("click", () => setShot(idx - 1));
+        nextShot.addEventListener("click", () => setShot(idx + 1));
+
+        document.addEventListener("keydown", (e) => {
+            // only when shots section is in view-ish
+            const rect = document.getElementById("shots").getBoundingClientRect();
+            const inView = rect.top < window.innerHeight && rect.bottom > 0;
+            if (!inView) return;
+            if (e.key === "ArrowLeft") setShot(idx - 1);
+            if (e.key === "ArrowRight") setShot(idx + 1);
+        });
+
+        // init
+        setShot(0);
+
+        // ========= 6) Legal modals =========
+        const modalBack = document.getElementById('modalBack');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        const modalClose = document.getElementById('modalClose');
+
+        const LEGAL = {
+            privacy: {
+                title: "Gizlilik Politikası (Şablon)",
+                html: `
+          <p><b>Son Güncelleme:</b> ${new Date().toLocaleDateString('tr-TR')}</p>
+          <h3>1. Kapsam</h3>
+          <p>Bu metin, VibesGlow kapsamında kişisel verilerin işlenmesine ilişkin genel çerçeveyi açıklar. Yayına çıkmadan önce kendi gerçek veri akışına göre güncellenmelidir.</p>
+          <h3>2. İşlenen Veriler</h3>
+          <ul>
+            <li>Hesap verileri (ör. e-posta)</li>
+            <li>Destek talepleri ve yazışmalar</li>
+            <li>Uygulama kullanım/çökme analitiği (performans ve hata tespiti)</li>
+            <li>Yüklenen ekran görüntüleri (analiz amacıyla)</li>
+          </ul>
+          <h3>3. Amaçlar</h3>
+          <ul>
+            <li>Analiz hizmetini sunmak</li>
+            <li>Hata/performans iyileştirmeleri yapmak</li>
+            <li>Destek taleplerini yönetmek</li>
+          </ul>
+          <div class="sep"></div>
+          <p class="muted2">Bu metin şablondur; hukuki danışmanlık yerine geçmez.</p>
+        `
+            },
+            kvkk: {
+                title: "KVKK Aydınlatma Metni (Şablon)",
+                html: `
+          <p><b>Son Güncelleme:</b> ${new Date().toLocaleDateString('tr-TR')}</p>
+          <h3>1. Veri Sorumlusu</h3>
+          <p>KVKK kapsamında veri sorumlusu sıfatıyla VibesGlow tarafından hazırlanmıştır. Yayına çıkmadan önce gerçek unvan/iletişim bilgileriyle güncellenmelidir.</p>
+          <h3>2. İşleme Amaçları ve Hukuki Sebepler</h3>
+          <ul>
+            <li>Hizmetin sunulması (sözleşmenin ifası)</li>
+            <li>Güvenlik ve hata tespiti (meşru menfaat)</li>
+            <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+          </ul>
+          <h3>3. Haklar</h3>
+          <p>KVKK m.11 kapsamındaki haklar için <a href="mailto:infovibesglow@gmail.com">infovibesglow@gmail.com</a> üzerinden başvurabilirsiniz.</p>
+          <div class="sep"></div>
+          <p class="muted2">Bu metin şablondur; hukuki danışmanlık yerine geçmez.</p>
+        `
+            },
+            terms: {
+                title: "Kullanım Şartları (Şablon)",
+                html: `
+          <p><b>Son Güncelleme:</b> ${new Date().toLocaleDateString('tr-TR')}</p>
+          <h3>1. Hizmet Tanımı</h3>
+          <p>VibesGlow, ekran görüntülerine dayanarak AI destekli analiz ve öneriler sunar. Sonuçlar bilgilendirme amaçlıdır.</p>
+          <h3>2. Sorumluluk Reddi</h3>
+          <ul>
+            <li>Analiz sonuçları kesin doğruluk iddiası taşımaz.</li>
+            <li>Uygulama, Instagram ile bağlantılı/ilişkili/resmi bir ürün değildir.</li>
+          </ul>
+          <h3>3. Satın Alma</h3>
+          <p>Satın alma işlemleri yalnızca mobil uygulama içinde yapılır. Mağaza politikaları geçerlidir.</p>
+          <div class="sep"></div>
+          <p class="muted2">Bu metin şablondur; hukuki danışmanlık yerine geçmez.</p>
+        `
+            },
+            deletion: {
+                title: "Hesap Silme Politikası (Şablon)",
+                html: `
+          <p><b>Son Güncelleme:</b> ${new Date().toLocaleDateString('tr-TR')}</p>
+          <h3>1. Uygulama Üzerinden</h3>
+          <p>Uygulama içi hesap ayarlarından “Hesabı Sil” adımlarını izleyebilirsiniz.</p>
+          <h3>2. E-posta ile</h3>
+          <p>Uygulamaya erişiminiz yoksa <a href="mailto:infovibesglow@gmail.com">infovibesglow@gmail.com</a> adresine talep gönderebilirsiniz.</p>
+          <div class="sep"></div>
+          <p class="muted2">Bu metin şablondur; hukuki danışmanlık yerine geçmez.</p>
+        `
+            }
+        };
+
+        function openModal(key) {
+            const item = LEGAL[key];
+            if (!item) return;
+            modalTitle.textContent = item.title;
+            modalBody.innerHTML = item.html;
+            modalBack.style.display = 'flex';
+            setTimeout(() => modalClose.focus(), 50);
+        }
+        function closeModal() {
+            modalBack.style.display = 'none';
+            modalBody.innerHTML = '';
+        }
+
+        document.querySelectorAll('[data-open]').forEach(btn => {
+            btn.addEventListener('click', () => openModal(btn.getAttribute('data-open')));
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modalBack.addEventListener('click', (e) => { if (e.target === modalBack) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalBack.style.display === 'flex') closeModal(); });
+    </script>
+</body>
+
+</html>
